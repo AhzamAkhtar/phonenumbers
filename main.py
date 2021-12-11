@@ -1,7 +1,9 @@
 import phonenumbers
 from test import number
 from phonenumbers import geocoder
-#number="+917827549899"
+countrycode="+91"
+lnumber="7827549899"
+number=countrycode+lnumber
 ch_nmber = phonenumbers.parse(number, "CH")
 print(number, "Is from ", geocoder.description_for_number(ch_nmber, "en"))
 
